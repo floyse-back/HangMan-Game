@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+}
+a{
+    color: rgb(5, 5, 5);
+}
+div{
+    justify-content: center;
+}
+.text{
+    font-size: 3em;
+}
+.game-start{
+    padding-top: 25%;
+    text-align: center;
+}
+.gameBut{
+    background-color: rgb(71, 106, 177);
+    padding: 20px;
+    color: rgb(20, 19, 16);
+    border-radius:20px;
+    text-decoration: none;
+    transition:0.35s;
+    border: 0;
+}
+.gameBut:hover{
+    transform: scale(1.25);
+    background-color: rgb(118, 146, 170);
+}
+
+

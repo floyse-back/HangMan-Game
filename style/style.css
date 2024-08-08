@@ -1,10 +1,28 @@
-body{
-    background-color: rgb(56, 56, 56);
-    color: white;
+
+
+
+
+.light-mode{
+    --background-main:rgb(255, 255, 255);
+    --color-theam:rgb(5, 5, 5);;
+    --game-background-color-theam:rgb(71, 106, 177);;
+    --game-background-color-theam-hover:rgb(118, 146, 170);
+    background-color: var(--background-main);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: rgb(209, 209, 209);
+    color: var(--color-theam);
+}
+.dark-mode{
+    --background-main:rgb(56, 56, 56);
+    --color-theam:rgb(209, 209, 209);
+    --game-background-color-theam:rgb(27, 99, 167);
+    --game-background-color-theam-hover:rgb(22, 38, 53);
+    background-color: var(--background-main);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-theam);
 }
 .header{
     display: flex;
@@ -14,7 +32,7 @@ body{
 a{
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    color: rgb(209, 209, 209);
+    color: var(--color-theam);
 }
 div{
     justify-content: center;
@@ -29,19 +47,16 @@ div{
 .gameBut{
     background-color: rgb(27, 99, 167);
     padding: 20px;
-    color: wheat;
+    color: var(--color-theam);
     border-radius:20px;
     text-decoration: none;
     transition:0.35s;
     border: 0;
 }
 
-.game{
-    background-color: black;
-}
 .gameBut:hover{
     transform: scale(1.25);
-    background-color: rgb(22, 38, 53);
+    background-color:var(--game-background-color-theam-hover);
 }
 
 
@@ -81,14 +96,15 @@ div{
     height: 18px;
     width: 18px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     transition: 0.4s;
 }
 .switch__input:focus + .switch__slider {
-    box-shadow: 0 0 1px #21262b;
+    box-shadow: 0 0 1px #313f4b;
 }
 .switch__input:checked + .switch__slider{
-    background-color: #21262b;
+    background-color: #313f4b;
+    
 }
 .switch__input:checked + .switch__slider::before{
     transform: translateX(36px);
