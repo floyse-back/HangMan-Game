@@ -46,7 +46,7 @@ div{
 }
 .gameBut{
     background-color: rgb(27, 99, 167);
-    padding: 20px;
+    padding: 25px;
     color: var(--color-theam);
     border-radius:20px;
     text-decoration: none;
@@ -111,4 +111,39 @@ div{
     -webkit-transform: translateX(36px);
     -ms-transform: translateX(36px);
     background-color: black;
+}
+.game{
+    text-align: center;
+    align-items: center;
+}
+.quit{
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+.quit button{
+    border-radius:10px;
+    min-width: 90px;
+    min-height: 40px;
+    border: 3px solid #313f4b;
+}
+.quit button:hover{
+    border: 1px solid var(--game-background-color-theam);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 10%;
+}
+.symvol{
+    display:inline-block;
+    padding: 2% 3%;
+    margin: 1%;
+    color: white;
+    font-size: 1.5em;
+    background-color: var(--game-background-color-theam);
+    border-radius: 6%;
+    border: 0;
+}
+.symvol:hover{
+    background-color: var(--game-background-color-theam-hover);
 }
